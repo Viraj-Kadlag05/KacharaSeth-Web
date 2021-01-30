@@ -1,32 +1,84 @@
-**Disclaimer: We understand that the commit history starts before April 24th. This is because we forked a basic web app to use for reference on how to do simple things such as GET requests and linking css/js files to html. The commit history from that basic project somehow carried over, but you can see our actual first commit for this submission was April 24th. We have already sorted this out with the EarthxHack staff and they have acknowledged this was fair use. You may also see the repo we forked and compare every line of code and see that no ideas or the same code are used: https://github.com/raspgary/Bilingual-Buddy**
+<div align="center">
+<h1 align="center">KacharaSeth-The-Recycling-Buddy</h1>
 
-![](pics/bblogotrans.png)
 
-Bathroom Buddy is an inexpensive yet powerful device that helps users decrease their environmental footprint by alerting and tracking users' water and light consumption. Users may monitor their activity on the Bathroom Buddy website where they may also redeem rewards for eco-friendly habits. This rewards system gamifies being environmentally aware, allowing Bathroom Buddy to grow it's platform and incentivize eco-friendly behavior.
+[![Website](https://img.shields.io/badge/Website-JavaScript-brightgreen)](https://atharwa-24.github.io/PlastiDex-Website/)
+
+  
+</div>
+
+### The wanton disposal of plastic led us to think of an incentive-based system.
+
+## What is Kachara Seth? 
+
+Waste Disposal is a huge problem that affects climate change directly. It's estimated that around 55 percent of global plastic waste was discarded, 25 percent was incinerated, and only 20 percent was recycled. Now our project aims to inspire people, give them a certain incentive in order to recycle their garbage. Our project KachraSeth.Co is a reward-based system to encourage people to recycle.
 
 ## Inspiration
-Water and energy are vital resources that we cannot live without. The average American shower uses 17.2 gallons and takes roughly 8.2 minutes. We realized that by cutting down showers by just a minute, we could be saving 2.1 gallons and more than 20 watts every shower session!
+
+Waste Disposal is a huge problem that affects climate change directly. It's estimated that around 55 percent of global plastic waste was discarded, 25 percent was incinerated, and only 20 percent was recycled.The wanton disposal of plastic led us to think of an incentive-based system.
+
+
+
+## What it does
+
+Our project aims to inspire people, give them a certain incentive in order to recycle their garbage. Our project Kachra Seth.Co is a reward-based system to encourage people to recycle.
 
 ## How we built it
-**Hardware:** We sautered an ESP8266 with a photo-resistor, humidity and temperature sensor, a piezo buzzer, and a rechargeable li-poly battery to sense light and shower events. C code was flashed on the board that includes custom calibration, wifi sync, timestamp collection, and heat index and light calculation software.
 
-**Backend:** The device sends data to the realtime database. The backend, built with node.js, restructures the data to correctly fit in the database. The [Firebase](https://firebase.google.com/) database is where our web app pulls data from. 
-
-**Frontend:** The web app was built with HTML, CSS, JavaScript/jQuery, [Bootstrap](https://getbootstrap.com/), [Google Charts API](https://developers.google.com/chart), and [amCharts API](https://www.amcharts.com/). A user logs in and is presented with their custom dashboard. Other pages include rewards, about, and individual shower and light data.
+We used A Machine Learning Model to Classify The Garbage. The device sends the data to a MySql database where our website pulls data from. The web app was built with HTML, CSS, JavaScript, Bootstrap, and Google Charts and amCharts APIs.
 
 ## Challenges we ran into
-Figuring out how to assemble the hardware into a small form-factor was one of the most difficult parts. We wanted the hardware to be cost-effective and light-weight. It was also difficult to make the UI since none of us have worked extensively in UI development before. All the chart APIs were brand-new to us.
+
+Figuring out how to assemble the hardware into a small form was one of the most difficult parts. We wanted the hardware to be cost effective and light-weight. We are most proud of the UI/UX design that animates upon loading, giving the app a modern feel.
 
 ## Accomplishments that we're proud of
-We are most proud of our device since we were able to make it very small and affordable, further increasing its practicality. We are also proud of the UI/UX design that animates upon loading, giving the app a modern feel. In addition, we are very pleased that we were able to interface the hardware and software in a way of utilizing cloud technology.
 
 ## What we learned
-Through our research for this project, we learned a lot about conserving water and energy and the grand scale of this problem in the world. Our eyes were open to a lot of society's shortcomings, which allowed us to come up with this device. On the hardware side, we learned how to interface a humiture and photoresistor sensor with a microcontroller. We also learned how to poll wifi networks, web-scrape a public IP address and timestamp. On the software end, we learned how to format data with chart APIs and animate charts with JavaScript.
 
-We also learned to create a dynamic and modern application that helps conserve water. Each one of our team members improved our software and hardware skills. We did research to see what made a modern app visually appealing and attempted for a minimalist yet modern look.
+- We have learnt using `Firebase` with `NodeMCU` Board to send Data to MySQL Server , 
+- Explored Some cool data visualization Softwares over Website `Amchart`, etc
 
-## What's next for Bathroom Buddy
-We are looking to include toilet flushing data on top of the shower and light data. In order to do this, we will use a microphone sensor with sound recognition software to understand when a toilet is being flushed. In addition, we would like to create an even smaller device with cheaper components to further increase practicality.
+## What's next for KacharaSeth:
 
-## How to run the web app
-Go to https://magiusdarrigo.github.io/BathroomBuddy/ or simply clone the repo and open the index.html file in a browser(preferably Chrome). A user ID you can test would be raspgary.
+We have already included a location script in order to identify which garbage comes from where. This data can be sent to the government officials which will help them to identify localities with garbage type and in turn help them set up waste disposal systems at such places.
+
+
+
+## Built With
+
+We used A Machine Learning Model to Classify The Garbage. The device sends the data to a MySql database where our website pulls data from. The web app was built with HTML, CSS, JavaScript, Bootstrap, and Google Charts and amCharts APIs.
+
+## Contributors :sparkles:
+
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/atharwa-24">
+            <img src="https://avatars0.githubusercontent.com/u/54115798?v=4" width="100;" alt="atharwa-24"/>
+            <br />
+            <sub><b>Atharwa_24</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/omkhairate">
+            <img src="https://avatars.githubusercontent.com/u/72100111?s=400&v=4" width="100;" alt="Om Khairate"/>
+            <br />
+            <sub><b>Om Khairate</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/DhawalKhapre">
+            <img src="https://avatars.githubusercontent.com/u/67652904?s=400&u=cb77aa2cb2a51bd3dce857a81894c90d977f1dfa&v=4" width="100;" alt="Dhawal Khapre"/>
+            <br />
+            <sub><b>Dhawal Khapre</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tejas2806">
+            <img src="https://avatars.githubusercontent.com/u/65996914?s=460&v=4" width="100;" alt="Tejas Khairnar"/>
+            <br />
+            <sub><b>Tejas Khairnar</b></sub>
+        </a>
+    </td>
+    </tr>
+</table>

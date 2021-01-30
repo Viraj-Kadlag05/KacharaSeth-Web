@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Bathroom Buddy-About</title>
+    <link rel="stylesheet" type="text/css" href="styles/aboutstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/sidebarstyle.css">
+    
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <!-- <script src="scripts/about.js"></script> -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="scripts/sidebarscript.js"></script>
+
+</head>
+        <body>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+           <!-- <img src="pics/ocean.jpg" id=background> -->
+
+            <div class="wrapper" style="background-image: url(pics/17.jpg);  height: 100%;background-position: center;  background-repeat: no-repeat; background-size: cover;">
+                <!-- Sidebar -->
+                <nav id="sidebar" style="background-color: white;">
+                    <div class="sidebar-header">
+                        <h2 style="color: green;">Welcome Tejas</h2>
+                    </div>
+                    <div style="justify-content: center"><img src="pics/profile.jpg" style="border-radius:70px; height: 150px; width: 150px; left: 50%;text-align:center; transform: translateX(30%); border: 3px solid white">
+                    </div>
+
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="dashboard.html"style="color: green">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="about.html" style="color: green">About</a>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"style="color: green">Garbage Record</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li>
+                                    <a href="shower.html"style="color: green">Plastic and Metal</a>
+                                </li>
+                                <li>
+                                    <a href="light.html"style="color: green">Proportion Of Plastic</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="rewards.html"style="color: green">Rewards</a>
+                        </li>
+                        <li>
+                            <a href="index.html"style="color: green">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="pagewrap">
+                   <img src="pics/logo6.png" id="logo">
+                   <!-- <img src="pics/arduino.jpg" id="buddy" style="height:300px; width: 400px;"> -->
+                   <div class="container-fluid" style="margin-bottom: 15px; margin-top:20px;">
+                          <div class="row" style="position:relative; text-align:center; justify-content: center; height: 400px; width: 100%;">
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+                                
+                                
+                            <div class="heading" style="background-color: green;opacity: 0.8;">What is Kachara Seth?</div>
+                                <div class="description"> Our project aims to inspire people, give them a certain incentive in order to recycle their garbage. Our project Kachra Seth.Co is a reward-based system to encourage people to recycle.</div>
+
+                            </div>
+
+                            <div style="margin-right: 3%;"></div>
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+
+                                <div class="heading" style="background-color: green;opacity: 0.8;">Inspiration</div>
+                                <div class="description"> Waste Disposal is a huge problem that affects climate change directly. It's estimated that around 55 percent of global plastic waste was discarded, 25 percent was incinerated, and only 20 percent was recycled.The wanton disposal of plastic led us to think of an incentive-based system.
+</div>
+
+                            </div>
+                                
+                            <div style="margin-right: 3%;"></div>
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+                                <div class="heading"style="background-color: green;opacity: 0.8;">How We Built It</div>
+                                <div class="description" id = "builtit">We used A Machine Learning Model to Classify The Garbage. The device sends the data to a MySql database where our website pulls data from. The web app was built with HTML, CSS, JavaScript, Bootstrap, and Google Charts and amCharts APIs. </div>
+                            </div>
+                          </div> 
+
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="height:10px;"></div>
+                    </div>
+                    <div class="container-fluid" style="margin-top:15px;">
+                          <div class="row" style="position:relative; text-align:center; justify-content: center; height: 400px; width: 100%; margin-top: 15px; margin-bottom: 15px;">
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+                                
+                                <div class="heading" style="background-color: green;opacity: 0.8;">What's Next?</div>
+                                <div class="description">We have already included a location script in order to identify which garbage comes from where. This data can be sent to the government officials which will help them to identify localities with garbage type and in turn help them set up waste disposal systems at such places. </div>
+
+                            </div>
+
+                            <div style="margin-right: 3%;"></div>
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+                                <div class="heading" style="background-color: green;opacity: 0.8;">Challenges/Accomplishments</div>
+                                <div class="description">Figuring out how to assemble the hardware into a small form was one of the most difficult parts. We wanted the hardware to be cost effective and light-weight. We are most proud of the UI/UX design that animates upon loading, giving the app a modern feel. </div>
+
+                            </div>
+                            <div style="margin-right: 3%;"></div>
+                            <div class="col-3" style="background-color:#ffffff; justify-content:space-between;box-shadow: 1px 4px 7px 2px rgba(0,0,0,0.1);">
+                                <div class="heading" style="background-color: green;opacity: 0.8;">What We Learned</div>
+                                <div class="description">We learned to create a dynamic and modern application that helps conserve water. Each one of our team members improved our software and hardware skills. We did research to see what made a modern app visually appealing and attempted for a minimalist look. </div>
+                            </div>
+                          </div> 
+
+                    </div>
+                    <div id="bottom"></div>
+
+ 
+
+
+                </div> 
+
+            </div>
+            
+        </body>
+</html>
